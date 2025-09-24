@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<!--
+
+
+        h1 element with id of title
+        img element of media, id coverart. image should have circ edges
+        h5 element of id with rating, imdb out of 10
+        iframe embedding youtube video, ID of trailer
+        an a element linking to imdb page
+        p element with summary text frmo idb, id of Summary
+        unordered list of 3 actors , ID Actors
+
+* all content must be centered
+* text dif color than backgroudn
+
+-->
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../css/site.css">
+
+</head>
+<body>
+    <div id="maindiv">
+        <h1 id="Title">Ender's Game</h1>
+        <p id="Summary">IMDb Summary of Ender's Game: Young Ender Wiggin is recruited by the International Military to lead the fight against the Formics, an insectoid alien race who had previously tried to invade Earth and had inflicted heavy losses on humankind.</p>
+        <img width="400" height="280" src="/images/endersGame.jpg" id="Coverart" alt="Enders Game Photo" /> <!-- rounding of corners happens in css-->
+        <h5 id="Rating">IMDb Rating: 6.6/10</h5>
+        <iframe id="Trailer" width="600" height="400" src="https://www.youtube.com/embed/2SRizeR4MmU" title="Ender&#39;s Game Official Trailer #1 (2013) - Harrison Ford Movie HD" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <br />  
+        <a href="https://www.imdb.com/title/tt1731141/">Click here to see the IMDb page for Ender's Game</a>
+        <h3 id="ActorsTitle">Lead Actors</h3>
+        <ul id="Actors">
+            <li>Harrison Ford</li>
+            <li>Asa Butterfield</li>
+            <li>Hailee Steinfeld</li>
+        </ul>
+    </div>
+</body>
+</html>
