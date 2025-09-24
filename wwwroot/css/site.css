@@ -15,12 +15,15 @@ html {
 html {
   position: relative;
   min-height: 100%;
+  
 }
 
 body {
   margin-bottom: 60px;
   background-color: lightgray;
 }
+
+body 
 
 #maindiv {
     text-align: center;
@@ -32,3 +35,72 @@ body {
 #Coverart {
     border-radius: 10px;
 }
+
+a {
+    color: #258cfb;
+    text-decoration: none;
+    padding: 2px 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a:hover {
+    background-color: #258cfb;
+    color: #ff0000;
+    border-radius: 4px;
+}
+
+
+p {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+p:hover {
+    transform: scale(1.15);
+}
+
+
+@keyframes wiggle {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(13deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    75% {
+        transform: rotate(-13deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
+h1:hover {
+    animation: wiggle 0.5s ease-in-out infinite;
+    text-shadow: 0 0 8px #f90, 0 0 16px #fff;
+}
+
+#cursor-aura {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    margin-left: -20px;
+    margin-top: -20px;
+    border-radius: 50%;
+    pointer-events: none;
+    background: rgba(255, 165, 0, 0.4);
+    box-shadow: 0 0 20px rgba(255,165,0,0.8), 0 0 40px rgba(255,165,0,0.6);
+    transition: transform 0.05s ease-out;
+    z-index: 9999;
+}
+
